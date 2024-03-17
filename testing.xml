@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Chrome Test">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="testcases.TestBrowserResponsiveness">
+                <methods>
+                    <include name="mobyPayHomePage"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="FirefoxTest">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="testcases.TestBrowserResponsiveness">
+                <methods>
+                    <include name="mobyPayHomePage"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="EdgeTest">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="testcases.TestBrowserResponsiveness">
+                <methods>
+                    <include name="mobyPayHomePage"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+
+    <test verbose="2" preserve-order="true" name="D:/MobyPayProject/MobyPayProject/src/test/java/testcases">
+        <classes>
+            <class name="testcases.TestSubmittingForm">
+                <methods>
+                    <include name="mobyPayHomeFormPageLogInWithValidCredentials"/>
+                    <include name="mobyPayHomeFormPageLogInWithoutLastName"/>
+                    <include name="mobyPayHomeFormPageLogInWithoutFirstName"/>
+                    <include name="mobyPayHomeFormPageLogInWithoutEmail"/>
+                    <include name="mobyPayHomeFormPageLogInWithoutPhoneNumber"/>
+                    <include name="mobyPayHomeFormPageLogInWithoutGenderSelection"/>
+                    <include name="mobyPayHomeFormPageLogInWithInvalid"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
